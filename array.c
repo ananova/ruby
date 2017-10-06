@@ -3541,7 +3541,7 @@ rb_ary_clear(VALUE ary)
  *     a.fill("z", 2, 2)        #=> ["x", "x", "z", "z"]
  *     a.fill("y", 0..1)        #=> ["y", "y", "z", "z"]
  *     a.fill { |i| i*i }       #=> [0, 1, 4, 9]
- *     a.fill(-2) { |i| i*i*i } #=> [0, 1, 8, 27]
+ *     a.fill(-2) { |i| i*i*i } #=> ["a", "b", 8, 27]
  */
 
 static VALUE
